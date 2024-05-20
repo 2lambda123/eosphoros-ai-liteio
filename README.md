@@ -1,4 +1,4 @@
-# LiteIO 
+# LiteIO
 
 **LiteIO** is a cloud-native block device service that uses multiple storage engines, including SPDK and LVM, to achieve high performance. It is specifically designed for Kubernetes in a hyper-converged architecture, allowing for block device provisioning across the entire cluster.
 
@@ -44,25 +44,24 @@ The Performance Results of FIO with 1 Disk of Native Disks, LiteIO NoF, and Open
 Unit: IOPS(K)
 
 |                        | Native-Disk | LiteIO | Mayastor |
-|------------------------|-------------|----------|----------|
-| 4k-rand w-dq16 4jobs   | 356.2       | 317.0    | 218.0    |
-| 4k-rand w-dq1 1jobs    | 62          | 18       | 15       |
-| 4k-rand r-dq128 8jobs  | 617.0       | 614.6    | 243.8    |
-| 4k-rand r-dq1 1jobs    | 11.7        | 8.5      | 7.6      |
-| 128k-seq r-dq128 4jobs | 24.9        | 24.8     | 19.7     |
-| 128k-seq w-dq128 4jobs | 15.6        | 15.5     | 15.4     |
-
+| ---------------------- | ----------- | ------ | -------- |
+| 4k-rand w-dq16 4jobs   | 356.2       | 317.0  | 218.0    |
+| 4k-rand w-dq1 1jobs    | 62          | 18     | 15       |
+| 4k-rand r-dq128 8jobs  | 617.0       | 614.6  | 243.8    |
+| 4k-rand r-dq1 1jobs    | 11.7        | 8.5    | 7.6      |
+| 128k-seq r-dq128 4jobs | 24.9        | 24.8   | 19.7     |
+| 128k-seq w-dq128 4jobs | 15.6        | 15.5   | 15.4     |
 
 Unit: Bandwidth(MB/s)
 
 |                        | Native-Disk | LiteIO | Mayastor |
-|------------------------|-------------|----------|----------|
-| 4k-rand w-dq16 4jobs   | 1459.6      | 1299.2   | 896.4    |
-| 4k-rand w-dq1 1jobs    | 255.6       | 76.1     | 63.1     |
-| 4k-rand r-dq128 8jobs  | 2528.0      | 2516.4   | 998.0    |
-| 4k-rand r-dq1 1jobs    | 47.8        | 34.6     | 31.1     |
-| 128k-seq r-dq128 4jobs | 3263.0      | 3271.0   | 2585.6   |
-| 128k-seq w-dq128 4jobs | 2037.6      | 2030.0   | 2021.4   |
+| ---------------------- | ----------- | ------ | -------- |
+| 4k-rand w-dq16 4jobs   | 1459.6      | 1299.2 | 896.4    |
+| 4k-rand w-dq1 1jobs    | 255.6       | 76.1   | 63.1     |
+| 4k-rand r-dq128 8jobs  | 2528.0      | 2516.4 | 998.0    |
+| 4k-rand r-dq1 1jobs    | 47.8        | 34.6   | 31.1     |
+| 128k-seq r-dq128 4jobs | 3263.0      | 3271.0 | 2585.6   |
+| 128k-seq w-dq128 4jobs | 2037.6      | 2030.0 | 2021.4   |
 
 ### LiteIO vs ESSD-PL3
 
@@ -71,13 +70,12 @@ Unit: Bandwidth(MB/s)
 Unit: IOPS(K)
 
 | Queue Depth | ESSD-PL3 | LiteIO |
-|-------------|----------|----------|
-| 1           | 5.0      | 6.0      |
-| 4           | 20.9     | 23.4     |
-| 16          | 83.3     | 84.9     |
-| 128         | 206.1    | 333.9    |
-| 256         | 206.4    | 426.2    |
-
+| ----------- | -------- | ------ |
+| 1           | 5.0      | 6.0    |
+| 4           | 20.9     | 23.4   |
+| 16          | 83.3     | 84.9   |
+| 128         | 206.1    | 333.9  |
+| 256         | 206.4    | 426.2  |
 
 ## Target Scenario
 
@@ -92,12 +90,10 @@ However, it is important to note that LiteIO does not currently support data rep
 - [Build Guide](doc/en/build.md)
 - [How to Customize Plugins](doc/en/plugins.md)
 
-
 ## Roadmap
 
 - [x] Disk-Agent exposes metric service
 - [ ] SPDK volume replica
-
 
 ## Contact
 
