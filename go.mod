@@ -8,24 +8,23 @@ require (
 	github.com/go-logr/logr v1.2.0
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/go-xorm/xorm v0.7.9
-	github.com/golang/protobuf v1.5.2
+	github.com/golang/protobuf v1.5.3
 	github.com/kubernetes-csi/csi-lib-utils v0.9.0
 	github.com/prometheus/client_golang v1.12.1
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.3
 	github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07 // indirect
 	github.com/toolkits/nux v0.0.0-20200401110743-debb3829764a
 	github.com/toolkits/slice v0.0.0-20141116085117-e44a80af2484 // indirect
 	github.com/toolkits/sys v0.0.0-20170615103026-1f33b217ffaf // indirect
 	go.uber.org/zap v1.19.1
-	golang.org/x/crypto v0.2.0 // indirect
-	golang.org/x/net v0.4.0
-	golang.org/x/sys v0.3.0
-	golang.org/x/time v0.2.0 // indirect
-	google.golang.org/grpc v1.40.0
-	google.golang.org/protobuf v1.27.1
+	golang.org/x/crypto v0.17.0 // indirect
+	golang.org/x/net v0.10.0
+	golang.org/x/sys v0.15.0
+	google.golang.org/grpc v1.56.3
+	google.golang.org/protobuf v1.30.0
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.24.7
 	k8s.io/apimachinery v0.24.7
