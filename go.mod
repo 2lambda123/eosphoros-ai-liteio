@@ -20,11 +20,10 @@ require (
 	github.com/toolkits/slice v0.0.0-20141116085117-e44a80af2484 // indirect
 	github.com/toolkits/sys v0.0.0-20170615103026-1f33b217ffaf // indirect
 	go.uber.org/zap v1.19.1
-	golang.org/x/crypto v0.17.0 // indirect
-	golang.org/x/net v0.10.0
-	golang.org/x/sys v0.15.0
+	golang.org/x/net v0.23.0
+	golang.org/x/sys v0.18.0
 	google.golang.org/grpc v1.56.3
-	google.golang.org/protobuf v1.30.0
+	google.golang.org/protobuf v1.33.0
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.24.7
 	k8s.io/apimachinery v0.24.7
